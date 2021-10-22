@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="name">Nombre: </label>
+                <input type="text" name="nombre" id="name" placeholder="Ingrese nombre" autocomplete="off">
+            </div>
+            <div>
+                <label for="last-name">Apellido: </label>
+                <input type="text" name="apellido" id="last-name" placeholder="Ingrese apellido" autocomplete="off">
+            </div>
+            <div>
+                <label for="mail">Correo electrónico: </label>
+                <input type="email" name="correo" id="mail" placeholder="Ingrese correo" required autocomplete="off">
+            </div>
+            <div>
+                <label for="age">Edad: </label>
+                <input type="number" name="edad" id="age" min="18" max="120">
+            </div>
+            <div>
+                <label for="country">Seleccionar nacionalidad</label>
+                <select name="pais" id="country">
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="MX">México</option>
+                    <option value="VZ">Venezuela</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="page-web" tabindex="2">Página web: </label>
+                <input type="url" name="pagina" id="page-web">
+            </div>
+            <div>
+                <label for="file">Archivo: </label>
+                <input type="file" name="archivo" id="file">
+            </div>
+
+            <div>
+                <label for="pwr">Contraseña: </label>
+                <input type="password" name="contraseina" id="pwr" tabindex="4">
+            </div>
+
+            <div>
+                <label for="date">Fecha: </label>
+                <input type="date" name="fecha" id="date">
+            </div>
+
+            <div>
+                <p>¿Tienes experiencia en programación?</p>
+                <input type="radio" name="experiencia" id="exp-yes">
+                <label for="exp-yes">Sí</label>
+                <input type="radio" name="experiencia" id="exp-no">
+                <label for="exp-no">No</label>
+            </div>
+
+            <div>
+                <p><label for="comments">Comentario: </label></p>
+                <textarea name="comentarios" id="comments" cols="30" rows="10" placeholder="Ingresa los comentarios"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="terminos" id="tyc">
+                <label for="tyc">Acepto términos y condiciones</label>
+            </div>
+
+            <div>
+                <button type="submit">Enviar info</button>
+            </div>
+            <div>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright 2021</p>
+    </footer>
+</body>
+</html>
