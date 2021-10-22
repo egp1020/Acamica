@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first class in Acámica</title>  
+    <style>
+        body {background-color: skyblue;}
+        h1 {color: whitesmoke; font-weight: 600;}
+        h6 {padding-left: 20px; font-size: large;}
+        p {background-color: crimson; color: white; padding: 20px;}
+    </style>
+</head>
+
+<body>
+    <h1 id="Name">Estefanía Garcés Pérez</h1>
+    <h6 id="Date_birth">01/10/1997</h6>
+    <p id="Description">I'm Estefanía Garcés Pérez. I'm from Colombia, I live in Medellín. Today I'm a Physics Student and I'm 19 years old.</p>
+</body>
+
+<script>
+    name1 = document.getElementById('Name');
+    name1.addEventListener('click', function() {alert('Welcome to my web page')});
+
+    description = document.getElementById('Description');
+    description.addEventListener('mouseenter', function(){
+        description.style.color='black';
+        description.style.backgroundColor = 'white';
+    });
+
+    description.addEventListener('mouseout', function() {
+        description.style.color='white';
+        description.style.backgroundColor = 'black';
+    });
+</script>
+
+</html>
