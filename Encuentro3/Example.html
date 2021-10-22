@@ -1,23 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-</head>
-<body>
-    <div>
+  </head>
+
+  <body>
+    <header>
+      <img src="https://via.placeholder.com/150 " alt="imagen 150px x 150px" />
+      <h1>Blog</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Blogs</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>Titulo de Post 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            nobis optio obcaecati, quam saepe asperiores quia facilis sunt
+            facere tempora ipsum doloribus reiciendis? Dolores eligendi nihil
+            officiis, corrupti voluptate voluptatem?
+          </p>
+        </article>
+        <article>
+          <h2>Título de Post 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+            nobis optio obcaecati, quam saepe asperiores quia facilis sunt
+            facere tempora ipsum doloribus reiciendis? Dolores eligendi nihil
+            officiis, corrupti voluptate voluptatem?
+          </p>
+        </article>
+      </section>
+      <section>
         <form action="page.html" method="post">
+          <div>
             <label for="name">Nombre: </label>
-            <input type="text" name="nombre" id="name" placeholder="Ingrese nombre"><br>
+            <input
+              type="text"
+              name="nombre"
+              id="name"
+              placeholder="Ingrese nombre"
+              autocomplete="off"
+              required
+              tabindex="1"
+            />
+          </div>
+          <div>
             <label for="last-name">Apellido: </label>
-            <input type="text" name="apellido" id="last-name" placeholder="Ingrese apellido"><br>
+            <input
+              type="text"
+              name="apellido"
+              id="last-name"
+              placeholder="Ingrese apellido"
+              autocomplete="off"
+              required
+              tabindex="2"
+            />
+          </div>
+          <div>
             <label for="age">Edad: </label>
-            <input type="text" name="edad" id="age" placeholder="Ingrese edad"><br>
+            <input
+              type="text"
+              name="edad"
+              id="age"
+              placeholder="Ingrese edad"
+              autocomplete="off"
+              tabindex="4"
+            />
+          </div>
+
+          <div>
             <label for="mail">Correo electrónico: </label>
-            <input type="email" name="correo" id="mail" placeholder="Ingrese correo">
+          <input
+            type="email"
+            name="correo"
+            id="mail"
+            placeholder="Ingrese correo"
+            autocomplete="off"
+            required
+            tabindex="3"
+          />
+          </div>
+          <div>
+            <button type="submit">Enviar datos</button>
+          </div>
+          <div>
+            <button type="reset">Limpiar</button>
+          </div>
         </form>
-    </div>
-</body>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2021 😃</p>
+    </footer>
+  </body>
 </html>
