@@ -60,6 +60,17 @@
         <div>
           <label for="country">País de procedencia: </label>
           <select name="pais" id="country" required>
+            <!--
+              Se implementa un buscador y así facilitar la búsqueda del país.
+              Es necesario que se implemente la etiqueta input con atributo list
+              y que tenga el mismo nombre del atributo id que tiene la etiqueta
+              datalist. Para usar este método se debe eliminar el select.
+            -->
+
+            <!--
+            <input type="text" name="buscar" id="search" list="lista-paises" />
+            <datalist id="lista-paises">
+              -->
             <option value="">Seleccione su país</option>
             <option value="AF">Afganistán</option>
             <option value="AL">Albania</option>
@@ -295,35 +306,47 @@
             <option value="YU">Yugoslavia</option>
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabue</option>
+            <!-- </datalist> -->
           </select>
         </div>
         <div>
           <label for="career">¿A qué carrera deseas inscribirte?</label>
           <select name="carrera" id="career" required>
-              <option value="">Seleccione carrera</option>
-              <option value="UXI">UX/UI</option>
-              <option value="DS">Data Science</option>
-              <option value="DSFS">Desarrollo de Software Full Stack</option>
-              <option value="FronEnd">FronEnd Avanzado</option>
+            <option value="">Seleccione carrera</option>
+            <option value="UXI">UX/UI</option>
+            <option value="DS">Data Science</option>
+            <option value="DSFS">Desarrollo de Software Full Stack</option>
+            <option value="FronEnd">FronEnd Avanzado</option>
           </select>
         </div>
         <div>
           <p>Modalidad</p>
-          <input type="radio" name="modalidad" id="mod-pre" value="pre" required/>
+          <input
+            type="radio"
+            name="modalidad"
+            id="mod-pre"
+            value="pre"
+            required
+          />
           <label for="mod-pre">Presencial</label> <br />
           <input type="radio" name="modalidad" id="mod-vi" />
           <label for="mod-vi">Virtual</label>
         </div>
         <div>
-            <p>¿Estás trabajando actualmente?</p>
-          <input type="radio" name="trabajo" id="job-si" value="si">
-          <label for="job-si">Sí</label> <br>
-          <input type="radio" name="trabajo" id="job-no" value="no">
-          <label for="job-no">No</label> <br>
+          <p>¿Estás trabajando actualmente?</p>
+          <input type="radio" name="trabajo" id="job-si" value="si" />
+          <label for="job-si">Sí</label> <br />
+          <input type="radio" name="trabajo" id="job-no" value="no" />
+          <label for="job-no">No</label> <br />
         </div>
         <div>
           <label for="phone">Télefono de contacto</label>
-          <input type="tel" name="telefono" id="phone" placeholder="Ingrese número telefónico" />
+          <input
+            type="tel"
+            name="telefono"
+            id="phone"
+            placeholder="Ingrese número telefónico"
+          />
         </div>
         <div>
           <label for="description">Descripción personal:</label><br />
@@ -334,8 +357,8 @@
           ></textarea>
         </div>
         <div>
-            <input type="checkbox" name="terminos" id="tyc" required>
-            <label for="tyc">Acepto términos y condiciones</label>
+          <input type="checkbox" name="terminos" id="tyc" required />
+          <label for="tyc">Acepto términos y condiciones</label>
         </div>
         <div>
           <button type="submit">Enviar datos</button>
