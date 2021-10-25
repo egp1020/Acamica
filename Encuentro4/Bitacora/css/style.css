@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 480px;
+    border: 10px solid sienna;
+    border-radius: 50% 0px 50px 50px;
+}
+
+h1{
+    text-align: center;
+    padding: 0% 25%;
+    font-family: 'Quicksand','Nunito', 'sans-serif';
+    font-size: 60px;
+    color: sienna;
+}
+
+span{
+    font-size: small;
+    font-style: italic;
+    margin-bottom: 10px
+}
+
+p{
+    text-align: justify;
+    padding: 0% 25%;
+    font-family: 'Nunito', 'sans-serif';
+    font-style: oblique;
+    font-size: large;
+}
