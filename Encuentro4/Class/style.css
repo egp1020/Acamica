@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: goldenrod;
+    color: aliceblue;
+    /* font-size: 20px; Modifica el html, por lo que es la medida root */
+}
+
+html{
+    font-size: 20px; /* Lo mismo que en el caso del selector universal */
+}
+
+body {
+    /* Comando para comentar/descomentar varias líneas: CTRL + A */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+}
+
+article .center{
+    font-size: 1.2rem;
+
+    /* rem, la medida la da a partir de la medida que tenga el html (o del root), entonces por defecto el HTML tiene una medida de 16px, entonces 2rem es 2*16px=32px*/
+
+    /*El rem se usa cuando las etiquetas padres no sirven de referencia por lo que se empieza a trabajar en base al root y el em se usa cuando se toma al padre como referencia.*/
+
+    text-align:center;
+    font-style: italic;
+}
+
+.rg .center{
+    text-align: right;
+}
